@@ -150,55 +150,51 @@ body {
     0 0 200px cyan;
 }
 
-.about{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 1.5rem;
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 1.5rem;
 }
 
-.about-img img{
-    padding-bottom: 20%;
-    max-width: 600px;
-    height: auto;
-    width: 100%;
-    border-radius: 8px;
+.about-img img {
+  max-width: 500px;
+  border: 2px solid rgb(188, 55, 162);
+  height: auto;
+  width: 100%;
+  border-radius: 50%;
+  margin-top: 20px; /* to move img at below side */
+  margin-left: 70px; /* to move img at right side */
+  box-shadow: 0 0 10px rgb(239, 17, 210), 0 0 25px rgb(35, 235, 225);
+
+}
+.about-img:hover {
+  box-shadow: 10 10 5px rgb(178, 25, 147), 10 10 25px rgb(218, 38, 206), 0 0 50px, 0 0 100px cyan,
+    0 0 200px rgb(219, 30, 203);
 }
 
-.about-text h2{
-    font-size: 60px;
-
+.about-text h2 {
+  font-size: 60px;
 }
 
 .about-text h2 span {
-    color: #0ef;
+  color: #0ef;
 }
 
-.about-text h4{
-    font-size: 29px;
-    font-weight: 600;
-    color: #fff;
-    line-height: 1.7;
-    margin: 15px 0 30px;
+.about-text h4 {
+  font-size: 29px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.7;
+  margin: 15px 0 30px;
 }
 
-.about-text p{
-    color: aliceblue;
-    font-size: 20px;
-    line-height: 1.4;
-    margin-bottom: 4rem;
-
+.about-text p {
+  color: aliceblue;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 4rem;
 }
-
-
-
-
-
-
-
-
-
-
 
 @keyframes slideRight {
   0% {
