@@ -175,10 +175,12 @@ body {
 
 .about-text h2 {
   font-size: 60px;
+
 }
 
 .about-text h2 span {
   color: #0ef;
+  cursor:none;
 }
 
 .about-text h4 {
