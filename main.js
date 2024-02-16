@@ -18,3 +18,16 @@ var typed = new Typed(".text2", {
     showCursor: false // Add this line to hide the cursor
 });
 
+//Animation for Achivments "..."
+var typed = new Typed(".text3", {
+    strings: ["..."],
+    typeSpeed: 150,
+    backSpeed: 150,
+    backDelay: 1000,
+    loop: true,
+    showCursor: false // Add this line to hide the cursor
+});
+
+
+
+
