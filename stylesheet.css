@@ -165,7 +165,7 @@ body {
   width: 100%;
   border-radius: 50%;
   margin-top: 20px; /* to move img at below side */
-  margin-left: 70px; /* to move img at right side */
+  margin-left: 70px; /* to move img at right side f*/
   box-shadow: 0 0 10px rgb(239, 17, 210), 0 0 25px rgb(35, 235, 225);
 }
 .about-img:hover {
