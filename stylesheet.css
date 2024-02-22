@@ -165,7 +165,7 @@ body {
   width: 100%;
   border-radius: 50%;
   margin-top: 20px; /* to move img at below side */
-  margin-left: 70px; /* to move img at right side */
+  margin-left: 70px; /* to move img at right side f*/
   box-shadow: 0 0 10px rgb(239, 17, 210), 0 0 25px rgb(35, 235, 225);
 }
 .about-img:hover {
@@ -328,55 +328,74 @@ section {
   opacity: 0;
 }
 
+/* CSS */
 .Technical-bars .bar .progress-line {
   position: relative;
   border-radius: 10px;
   width: 100%;
   height: 5px;
   background-color: #010101;
-  animation: animate 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
-  transform: scaleX();
-  transform-origin: left;
 }
 
-@keyframes animate{
-  100% {
-      transform: scaleX(1);
-  }
-}
-
-.Technical-bars .bar .progress-line span{
+.Technical-bars .bar .progress-line span {
   height: 100%;
-  background-color: #0ef;
-  position: absolute;
+  display: block;
   border-radius: 10px;
-  animation: animate 1s 1s cubic-bezier(1, 0, 0, 5, 1) forwards;
+  background-color: #0ef;
   transform: scaleX(0);
   transform-origin: left;
 }
 
-.progress-line-html span{
-  width: 90%;
-  color: rgb(238, 27, 62);
+@keyframes fillProgress {
+  to {
+    transform: scaleX(1);
+  }
 }
 
-.progress-line-css span{
+/* Specific widths for different skills */
+.progress-line.html span {
+  width: 90%;
+}
+
+.progress-line.css span {
   width: 60%;
 }
 
-.progress-line-javascript span{
+.progress-line.javascript span {
   width: 80%;
 }
 
-.progress-line.cpp span{
+.progress-line.cpp span {
   width: 70%;
 }
 
-.progress-line.flutter span{
+.progress-line.flutter span {
   width: 100%;
 }
 
-.progress-line span::after{
+/* Animation */
+.progress-line.html span {
+  animation: fillProgress 1s ease forwards;
+}
+
+.progress-line.css span {
+  animation: fillProgress 1s ease forwards;
+}
+
+.progress-line.javascript span {
+  animation: fillProgress 1s ease forwards;
+}
+
+.progress-line.cpp span {
+  animation: fillProgress 1s ease forwards;
+}
+
+.progress-line.flutter span {
+  animation: fillProgress 1s ease forwards;
+}
+
+/* After and Before Pseudo  */
+.progress-line span::after {
   position: absolute;
   padding: 1px 8px;
   background-color: #ec1111;
@@ -389,29 +408,8 @@ section {
   opacity: 0;
 }
 
-.progress-line.html span::after{
-  content: "90%";
-  background-color: #eb0a0a;
-}
-
-.progress-line.css span::after{
-  content: "60%";
-}
-
-.progress-line.javascript span::after{
-  content: "80%";
-}
-
-.progress-line.cpp span::after{
-  content: "70%";
-}
-
-.progress-line.flutter span::after{
-  content: "100%";
-}
-
-.progress-line span::before{
-  background-color: #ec1111;
+.progress-line span::before {
+  background-color: #11ec20;
   content: "";
   position: absolute;
   width: 0;
@@ -424,8 +422,8 @@ section {
   right: 0;
   animation: showText 0.5s 1.5s linear forwards;
   opacity: 0;
-
 }
+
 
 
 @keyframes showText {
@@ -478,7 +476,7 @@ position: relative;
 
 .path{
   stroke-width: 10;
-  stroke: #0ef;
+  stroke: rgb(0, 238, 255);
   fill: transparent;
   stroke-dasharray: 502;
   stroke-dashoffset: 502;
