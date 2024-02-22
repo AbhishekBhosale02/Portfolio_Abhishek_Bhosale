@@ -15,7 +15,7 @@ body {
   left: 0;
   width: 100%;
   padding: 20px 10%;
-  background: #070332;
+  background: #08052a;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,7 +25,7 @@ body {
 .logo {
   position: relative;
   font-size: 25px;
-  color: #fff;
+  color: #2084a2;
   text-decoration: none;
   font-weight: 600;
   cursor: default;
@@ -259,6 +259,7 @@ body {
   padding: 12px 20px;
   background: #0ef;
   border-radius: 40px;
+  border: 2px solid rgb(188, 55, 162);
   font-size: 16px;
   color: #081b29;
   letter-spacing: 1px;
@@ -354,15 +355,16 @@ section {
   transform-origin: left;
 }
 
-.progress-line.html span{
+.progress-line-html span{
   width: 90%;
+  color: rgb(238, 27, 62);
 }
 
-.progress-line.css span{
+.progress-line-css span{
   width: 60%;
 }
 
-.progress-line.javascript span{
+.progress-line-javascript span{
   width: 80%;
 }
 
@@ -377,7 +379,7 @@ section {
 .progress-line span::after{
   position: absolute;
   padding: 1px 8px;
-  background-color: #000;
+  background-color: #ec1111;
   color: #fff;
   font-size: 12px;
   border-radius: 3px;
@@ -389,6 +391,7 @@ section {
 
 .progress-line.html span::after{
   content: "90%";
+  background-color: #eb0a0a;
 }
 
 .progress-line.css span::after{
@@ -408,6 +411,7 @@ section {
 }
 
 .progress-line span::before{
+  background-color: #ec1111;
   content: "";
   position: absolute;
   width: 0;
@@ -422,6 +426,7 @@ section {
   opacity: 0;
 
 }
+
 
 @keyframes showText {
   100% {
