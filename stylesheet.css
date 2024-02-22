@@ -394,7 +394,7 @@ section {
   animation: fillProgress 1s ease forwards;
 }
 
-/* After and Before Pseudo Elements */
+/* After and Before Pseudo  */
 .progress-line span::after {
   position: absolute;
   padding: 1px 8px;
