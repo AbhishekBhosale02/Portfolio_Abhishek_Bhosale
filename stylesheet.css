@@ -206,7 +206,7 @@ body {
 .sub-title {
   text-align: center;
   font-size: 60px;
-  padding-bottom: 70px;
+  padding-bottom: 0px;
 }
 
 .sub-title span {
@@ -375,23 +375,23 @@ section {
 
 /* Animation */
 .progress-line.html span {
-  animation: fillProgress 1s ease forwards;
+  animation: fillProgress 2.5s ease forwards;
 }
 
 .progress-line.css span {
-  animation: fillProgress 1s ease forwards;
+  animation: fillProgress 2.5s ease forwards;
 }
 
 .progress-line.javascript span {
-  animation: fillProgress 1s ease forwards;
+  animation: fillProgress 2.5s ease forwards;
 }
 
 .progress-line.cpp span {
-  animation: fillProgress 1s ease forwards;
+  animation: fillProgress 2.5s ease forwards;
 }
 
 .progress-line.flutter span {
-  animation: fillProgress 1s ease forwards;
+  animation: fillProgress 2.5s ease forwards;
 }
 
 /* After and Before Pseudo  */
@@ -531,6 +531,104 @@ position: relative;
   animation: showText 0.5s 1s linear forwards;
   opacity: 0;
 }
+
+
+.main-text{
+  padding-top: 130px;
+  margin-top: 200px;
+}
+.main-text h2{
+  font-size: 60px;
+  line-height: 1;
+  text-align: center;
+}
+.main-text h2 span{
+  color: #0ef;
+}
+
+.portfolio-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(359px));
+}
+.row{
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.row img{
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  transition: transform 0.5s;
+}
+.layer{
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
+  position: absolute;
+  border-radius: 8px;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 40px;
+  transition: height 0.5s;
+}
+.layer h5{
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.layer p{
+  color: #000;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.layer i{
+  color: #ededed;
+  margin-top: 20px;
+  font-size: 20px;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.row:hover img{
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
