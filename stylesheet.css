@@ -549,7 +549,7 @@ position: relative;
 .portfolio-content .row {
   flex-basis: calc(50% - 20px);
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .row {
@@ -586,8 +586,8 @@ position: relative;
   transition: height 0.5s;
 }
 
-.layer h5 {
-  color: #fff; /* Changed text color */
+.layer h6 {
+  color: #040404; /* Changed text color */
   font-family: "Open Sans", sans-serif; /* Added custom font */
   font-size: 22px;
   font-weight: 600;
@@ -595,9 +595,11 @@ position: relative;
 }
 
 .layer p {
-  color: #fff; /* Changed text color */
+  color: #070202; /* Changed text color */
   font-size: 14px;
   line-height: 1.6;
+  font-weight: bold;
+
 }
 
 .layer i {
@@ -610,7 +612,7 @@ position: relative;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition: all 0.3s; /* Added animation for icon */
+  transition: all 0.5s; /* Added animation for icon */
 }
 
 .row:hover img {
