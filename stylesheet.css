@@ -207,6 +207,7 @@ body {
   text-align: center;
   font-size: 60px;
   padding-bottom: 0px;
+  padding-top: 70px;
 }
 
 .sub-title span {
@@ -214,7 +215,7 @@ body {
 }
 
 .container {
-  padding: 90px;
+  padding-left: 45px;
 }
 
 .services-list {
@@ -289,7 +290,7 @@ section {
 .container1 {
   width: 45%; /* Adjust width as needed */
   height: 500; /* Adjust height as needed */
-  padding: 75px 90px;
+  padding: 25px 90px;
   margin: 20px; /* Adjust margin as needed */
 }
 
@@ -533,36 +534,29 @@ position: relative;
 }
 
 
-.main-text{
-  padding-top: 130px;
-  margin-top: 200px;
-}
-.main-text h2{
-  font-size: 60px;
-  line-height: 1;
-  text-align: center;
-}
-.main-text h2 span{
-  color: #0ef;
+.portfolio-content {
+  padding-top: 50px;
+  padding-left: 10px;
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(359px, 1fr)); /* Updated to include 1fr to prevent overflow */
+  grid-gap: 20px; /* Added grid gap */
 }
 
-.portfolio-content{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(359px));
-}
-.row{
+.row {
+  flex-basis: calc(25% - 20px); /* Adjust width based on the number of columns */
+  margin-bottom: 20px; 
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 12px;
   cursor: pointer;
 }
-.row img{
+.row img {
   width: 100%;
   border-radius: 8px;
   display: block;
   transition: transform 0.5s;
 }
-.layer{
+.layer {
   width: 100%;
   height: 0;
   background: linear-gradient(rgba(0, 0, 0, 0.1), #0ef);
@@ -579,19 +573,18 @@ position: relative;
   padding: 0 40px;
   transition: height 0.5s;
 }
-.layer h5{
+.layer h5 {
   color: #000;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 15px;
 }
-.layer p{
+.layer p {
   color: #000;
   font-size: 1rem;
   line-height: 1.8;
 }
-
-.layer i{
+.layer i {
   color: #ededed;
   margin-top: 20px;
   font-size: 20px;
@@ -603,10 +596,12 @@ position: relative;
   justify-content: center;
   border-radius: 50%;
 }
-.row:hover img{
+.row:hover img {
   transform: scale(1.1);
 }
-
+.row:hover .layer {
+  height: 100%;
+}
 
 
 
