@@ -306,15 +306,15 @@ section {
   font-size: 23px;
 }
 
-.Technical-bars .bar{
+.Technical-bars .bar {
   margin-top: 40px 0;
 }
 
-.Technical-bars .bar:first-child{
+.Technical-bars .bar:first-child {
   margin-top: 0;
 }
 
-.Technical-bars .bar:last-child{
+.Technical-bars .bar:last-child {
   margin-bottom: 0;
 }
 
@@ -425,15 +425,13 @@ section {
   opacity: 0;
 }
 
-
-
 @keyframes showText {
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }
 
-.radial-bars{
+.radial-bars {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -441,14 +439,14 @@ section {
   align-items: flex-start;
 }
 
-.radial-bars .radial-bar{
-width: 50%;
-height: 170px;
-margin-bottom: 10px;
-position: relative;
+.radial-bars .radial-bar {
+  width: 50%;
+  height: 170px;
+  margin-bottom: 10px;
+  position: relative;
 }
 
-.radial-bars .radial-bar svg{
+.radial-bars .radial-bar svg {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -457,8 +455,7 @@ position: relative;
   height: 160px;
 }
 
-
-.radial-bars .radial-bar .progress-bar{
+.radial-bars .radial-bar .progress-bar {
   stroke-width: 10;
   stop-color: rgb(5, 5, 5);
   fill: transparent;
@@ -468,14 +465,13 @@ position: relative;
   animation: animate-bar 1s linear forwards;
 }
 
-
-@keyframes animate-bar{
-  100%{
+@keyframes animate-bar {
+  100% {
     stroke-dashoffset: -1;
   }
 }
 
-.path{
+.path {
   stroke-width: 10;
   stroke: rgb(0, 238, 255);
   fill: transparent;
@@ -484,43 +480,51 @@ position: relative;
   stroke-linecap: round;
 }
 
-.path-1{animation: animate-path1 1s 1s linear forwards;}
-.path-2{animation: animate-path2 1s 1s linear forwards;}
-.path-3{animation: animate-path3 1s 1s linear forwards;}
-.path-4{animation: animate-path4 1s 1s linear forwards;}
-
-@keyframes animate-path1{
-  100%{
-    stroke-dashoffset: 50;;
-  }
+.path-1 {
+  animation: animate-path1 1s 1s linear forwards;
 }
-@keyframes animate-path2{
-  100%{
-    stroke-dashoffset: 175;;
-  }
+.path-2 {
+  animation: animate-path2 1s 1s linear forwards;
 }
-@keyframes animate-path3{
-  100%{
-    stroke-dashoffset: 125;;
-  }
+.path-3 {
+  animation: animate-path3 1s 1s linear forwards;
 }
-@keyframes animate-path4{
-  100%{
-    stroke-dashoffset: 75;;
-  }
+.path-4 {
+  animation: animate-path4 1s 1s linear forwards;
 }
 
-.radial-bar .percentage{
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   font-size: 17px;
-   font-weight: 500;
-   animation: showText 0.5s 1s linear forwards;
+@keyframes animate-path1 {
+  100% {
+    stroke-dashoffset: 50;
+  }
+}
+@keyframes animate-path2 {
+  100% {
+    stroke-dashoffset: 175;
+  }
+}
+@keyframes animate-path3 {
+  100% {
+    stroke-dashoffset: 125;
+  }
+}
+@keyframes animate-path4 {
+  100% {
+    stroke-dashoffset: 75;
+  }
 }
 
-.radial-bar .text{
+.radial-bar .percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 17px;
+  font-weight: 500;
+  animation: showText 0.5s 1s linear forwards;
+}
+
+.radial-bar .text {
   width: 100%;
   position: absolute;
   text-align: center;
@@ -533,21 +537,19 @@ position: relative;
   opacity: 0;
 }
 
-
 /* section of My Projects... */
-
 
 .portfolio-content {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 50px;
-  padding-left: 100px;
+  padding-top: 30px;
+  padding-left: 160px;
   padding-right: 100px;
-  padding-bottom: 80px;
+  padding-bottom: 10px;
 }
 
 .portfolio-content .row {
-  flex-basis: calc(50% - 20px);
+  flex-basis: calc(50% - 60px);
   margin-right: 20px;
   margin-bottom: 30px;
 }
@@ -557,7 +559,7 @@ position: relative;
   overflow: hidden;
   border-radius: 12px;
   cursor: pointer;
-  box-shadow: 1px 1px 20px #dc1010f7, 1px 1px 40px #003cfff7; /* Box shadow added */
+  box-shadow: 1px 1px 20px #10dc91f7, 1px 1px 40px #8800fff7; /* Box shadow added */
 }
 
 .row img {
@@ -565,7 +567,6 @@ position: relative;
   border-radius: 8px;
   display: block;
   transition: transform 0.3s;
-  box-shadow: 1px 1px 20px #10dc6cf7, 1px 1px 40px #aa00fff7;
 }
 
 .layer {
@@ -587,7 +588,7 @@ position: relative;
 }
 
 .layer h6 {
-  color: #040404; /* Changed text color */
+  color: #04fa73; /* Changed text color */
   font-family: "Open Sans", sans-serif; /* Added custom font */
   font-size: 22px;
   font-weight: 600;
@@ -599,7 +600,6 @@ position: relative;
   font-size: 14px;
   line-height: 1.6;
   font-weight: bold;
-
 }
 
 .layer i {
@@ -626,29 +626,6 @@ position: relative;
 .row:hover .layer i {
   transform: rotate(360deg); /* Added rotation animation for icon */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @keyframes slideRight {
   0% {
