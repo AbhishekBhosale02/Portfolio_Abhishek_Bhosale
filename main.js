@@ -1,6 +1,6 @@
 //Anime for App Developer Text //////////////////////////////////////////////////////////////////////////
 var typed = new Typed(".text", {
-    strings: ["App Developer...", "Web Developer..."], 
+    strings: ["Software Engineer...", "AWS Cloud practitioner..."], 
     typeSpeed: 100, 
     backSpeed: 100, 
     backDelay: 1000, 
